@@ -61,6 +61,10 @@ public abstract class AbstractXmlApplicationContext extends AbstractRefreshableC
 	 */
 	public AbstractXmlApplicationContext(@Nullable ApplicationContext parent) {
 		super(parent);
+<<<<<<< HEAD
+=======
+		logger.warn("AbstractXmlApplicationContext(@Nullable ApplicationContext parent) called");
+>>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 	}
 
 

@@ -40,6 +40,10 @@ public class PropertySourcesPropertyResolver extends AbstractPropertyResolver {
 	 * @param propertySources the set of {@link PropertySource} objects to use
 	 */
 	public PropertySourcesPropertyResolver(@Nullable PropertySources propertySources) {
+<<<<<<< HEAD
+=======
+		logger.warn("PropertySourcesPropertyResolver(@Nullable PropertySources propertySources) called");
+>>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 		this.propertySources = propertySources;
 	}
 

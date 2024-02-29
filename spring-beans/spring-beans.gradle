@@ -23,7 +23,11 @@ sourceSets {
 }
 
 compileGroovy {
+<<<<<<< HEAD
 //	options.compilerArgs += "-Werror"
+=======
+	options.compilerArgs += "-Werror"
+>>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 }
 
 // This module also builds Kotlin code and the compileKotlin task naturally depends on

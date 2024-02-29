@@ -252,6 +252,10 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 	 * Create a new AbstractApplicationContext with no parent.
 	 */
 	public AbstractApplicationContext() {
+<<<<<<< HEAD
+=======
+		logger.warn("AbstractApplicationContext() called");
+>>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 		this.resourcePatternResolver = getResourcePatternResolver();
 	}
 
@@ -261,6 +265,10 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 	 */
 	public AbstractApplicationContext(@Nullable ApplicationContext parent) {
 		this();
+<<<<<<< HEAD
+=======
+		logger.warn("AbstractApplicationContext(@Nullable ApplicationContext parent) called");
+>>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 		setParent(parent);
 	}
 
@@ -340,6 +348,10 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 	 */
 	@Override
 	public ConfigurableEnvironment getEnvironment() {
+<<<<<<< HEAD
+=======
+		logger.warn("getEnvironment() called" );
+>>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 		if (this.environment == null) {
 			this.environment = createEnvironment();
 		}
@@ -352,6 +364,10 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 	 * a custom {@link ConfigurableEnvironment} implementation.
 	 */
 	protected ConfigurableEnvironment createEnvironment() {
+<<<<<<< HEAD
+=======
+		logger.warn("createEnvironment() called");
+>>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 		return new StandardEnvironment();
 	}
 
@@ -492,6 +508,10 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 	 * @see org.springframework.core.io.support.PathMatchingResourcePatternResolver
 	 */
 	protected ResourcePatternResolver getResourcePatternResolver() {
+<<<<<<< HEAD
+=======
+		logger.warn("AbstractApplicationContext.getResourcePatternResolver() called");
+>>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 		return new PathMatchingResourcePatternResolver(this);
 	}
 
@@ -676,6 +696,10 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 	 * @see #getBeanFactory()
 	 */
 	protected ConfigurableListableBeanFactory obtainFreshBeanFactory() {
+<<<<<<< HEAD
+=======
+		logger.warn("AbstractApplicationContext obtainFreshBeanFactory() called");
+>>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 		refreshBeanFactory();
 		return getBeanFactory();
 	}

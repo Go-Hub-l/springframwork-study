@@ -50,7 +50,10 @@ import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
  * @author Juergen Hoeller
  * @author Chris Beams
  */
+<<<<<<< HEAD
 @SuppressWarnings({"removal"})
+=======
+>>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 public class ClassPathXmlApplicationContextTests {
 
 	private static final String PATH = "/org/springframework/context/support/";
@@ -79,7 +82,10 @@ public class ClassPathXmlApplicationContextTests {
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext(FQ_SIMPLE_CONTEXT);
 		assertThat(ctx.containsBean("someMessageSource")).isTrue();
 		ctx.close();
+<<<<<<< HEAD
 		System.out.println("========================");
+=======
+>>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 	}
 
 	@Test

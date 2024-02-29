@@ -24,6 +24,11 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
+<<<<<<< HEAD
+=======
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+>>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.ClassUtils;
@@ -47,6 +52,10 @@ import org.springframework.util.StringUtils;
  * @see org.springframework.context.support.ClassPathXmlApplicationContext
  */
 public class DefaultResourceLoader implements ResourceLoader {
+<<<<<<< HEAD
+=======
+	private static final Log logger = LogFactory.getLog(DefaultResourceLoader.class);
+>>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 
 	@Nullable
 	private ClassLoader classLoader;
@@ -64,6 +73,10 @@ public class DefaultResourceLoader implements ResourceLoader {
 	 * @see java.lang.Thread#getContextClassLoader()
 	 */
 	public DefaultResourceLoader() {
+<<<<<<< HEAD
+=======
+		logger.warn("DefaultResourceLoader() called");
+>>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 	}
 
 	/**

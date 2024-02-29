@@ -57,6 +57,10 @@ public abstract class AbstractRefreshableConfigApplicationContext extends Abstra
 	 */
 	public AbstractRefreshableConfigApplicationContext(@Nullable ApplicationContext parent) {
 		super(parent);
+<<<<<<< HEAD
+=======
+		logger.warn("AbstractRefreshableConfigApplicationContext(@Nullable ApplicationContext parent) called");
+>>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 	}
 
 
@@ -74,6 +78,10 @@ public abstract class AbstractRefreshableConfigApplicationContext extends Abstra
 	 * <p>If not set, the implementation may use a default as appropriate.
 	 */
 	public void setConfigLocations(@Nullable String... locations) {
+<<<<<<< HEAD
+=======
+		logger.warn("setConfigLocations(@Nullable String... locations) start exec!");
+>>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 		if (locations != null) {
 			Assert.noNullElements(locations, "Config locations must not be null");
 			this.configLocations = new String[locations.length];
@@ -84,6 +92,10 @@ public abstract class AbstractRefreshableConfigApplicationContext extends Abstra
 		else {
 			this.configLocations = null;
 		}
+<<<<<<< HEAD
+=======
+		logger.warn("setConfigLocations(@Nullable String... locations) start exec finish!");
+>>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 	}
 
 	/**

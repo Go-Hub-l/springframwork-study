@@ -122,6 +122,10 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 	 */
 	public AbstractEnvironment() {
 		this(new MutablePropertySources());
+<<<<<<< HEAD
+=======
+		logger.warn("AbstractEnvironment() called");
+>>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 	}
 
 	/**
@@ -135,6 +139,10 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 	 * @see #customizePropertySources(MutablePropertySources)
 	 */
 	protected AbstractEnvironment(MutablePropertySources propertySources) {
+<<<<<<< HEAD
+=======
+		logger.warn("AbstractEnvironment(MutablePropertySources) called");
+>>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 		this.propertySources = propertySources;
 		this.propertyResolver = createPropertyResolver(propertySources);
 		customizePropertySources(propertySources);
@@ -148,6 +156,10 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 	 * @see #getPropertyResolver()
 	 */
 	protected ConfigurablePropertyResolver createPropertyResolver(MutablePropertySources propertySources) {
+<<<<<<< HEAD
+=======
+		logger.warn("createPropertyResolver(MutablePropertySources) called");
+>>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 		return new PropertySourcesPropertyResolver(propertySources);
 	}
 
@@ -241,6 +253,10 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 	 * @see org.springframework.context.ApplicationContextInitializer
 	 */
 	protected void customizePropertySources(MutablePropertySources propertySources) {
+<<<<<<< HEAD
+=======
+		logger.warn("customizePropertySources(MutablePropertySources propertySources) called");
+>>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 	}
 
 	/**
@@ -627,6 +643,10 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 
 	@Override
 	public String resolveRequiredPlaceholders(String text) throws IllegalArgumentException {
+<<<<<<< HEAD
+=======
+		logger.warn("resolveRequiredPlaceholders**(**String text)[AbstractEnvironment] called");
+>>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 		return this.propertyResolver.resolveRequiredPlaceholders(text);
 	}
 

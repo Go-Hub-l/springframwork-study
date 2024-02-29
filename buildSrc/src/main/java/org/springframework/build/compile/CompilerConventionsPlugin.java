@@ -50,8 +50,13 @@ public class CompilerConventionsPlugin implements Plugin<Project> {
 		COMPILER_ARGS = new ArrayList<>();
 		COMPILER_ARGS.addAll(commonCompilerArgs);
 		COMPILER_ARGS.addAll(Arrays.asList(
+<<<<<<< HEAD
 				"-Xlint:varargs", "-Xlint:fallthrough", "-Xlint:rawtypes", "-Xlint:deprecation"
 //				"-Xlint:unchecked", "-Werror"
+=======
+				"-Xlint:varargs", "-Xlint:fallthrough", "-Xlint:rawtypes", "-Xlint:deprecation",
+				"-Xlint:unchecked", "-Werror"
+>>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 		));
 		TEST_COMPILER_ARGS = new ArrayList<>();
 		TEST_COMPILER_ARGS.addAll(commonCompilerArgs);

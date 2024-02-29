@@ -83,6 +83,10 @@ public class ClassPathXmlApplicationContext extends AbstractXmlApplicationContex
 	 */
 	public ClassPathXmlApplicationContext(String configLocation) throws BeansException {
 		this(new String[] {configLocation}, true, null);
+<<<<<<< HEAD
+=======
+		logger.warn("ClassPathXmlApplicationContext(String configLocation) called");
+>>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 	}
 
 	/**
@@ -137,8 +141,13 @@ public class ClassPathXmlApplicationContext extends AbstractXmlApplicationContex
 	public ClassPathXmlApplicationContext(
 			String[] configLocations, boolean refresh, @Nullable ApplicationContext parent)
 			throws BeansException {
+<<<<<<< HEAD
 
 		super(parent);
+=======
+		super(parent);
+		logger.warn("ClassPathXmlApplicationContext(String[] configLocations, boolean refresh, @Nullable ApplicationContext parent) called");
+>>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 		setConfigLocations(configLocations);
 		if (refresh) {
 			refresh();
