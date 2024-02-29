@@ -64,13 +64,10 @@ public abstract class AbstractPropertyResolver implements ConfigurablePropertyRe
 	private final Set<String> requiredProperties = new LinkedHashSet<>();
 
 
-<<<<<<< HEAD
-=======
 	public AbstractPropertyResolver() {
 		logger.warn("AbstractPropertyResolver() called");
 	}
 
->>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 	@Override
 	public ConfigurableConversionService getConversionService() {
 		// Need to provide an independent DefaultConversionService, not the
@@ -211,10 +208,7 @@ public abstract class AbstractPropertyResolver implements ConfigurablePropertyRe
 
 	@Override
 	public String resolveRequiredPlaceholders(String text) throws IllegalArgumentException {
-<<<<<<< HEAD
-=======
 		logger.warn("resolveRequiredPlaceholders(String text)[AbstractPropertyResolver] called");
->>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 		if (this.strictHelper == null) {
 			this.strictHelper = createPlaceholderHelper(false);
 		}

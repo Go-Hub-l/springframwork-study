@@ -43,11 +43,7 @@ import org.springframework.asm.Type;
 /**
  * @version $Id: ReflectUtils.java,v 1.30 2009/01/11 19:47:49 herbyderby Exp $
  */
-<<<<<<< HEAD
 @SuppressWarnings({"rawtypes", "unchecked", "removal"})
-=======
-@SuppressWarnings({"rawtypes", "unchecked"})
->>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 public class ReflectUtils {
 
 	private ReflectUtils() {

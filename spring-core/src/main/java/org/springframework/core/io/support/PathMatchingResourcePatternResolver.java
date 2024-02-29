@@ -222,10 +222,7 @@ public class PathMatchingResourcePatternResolver implements ResourcePatternResol
 	 * actual resources with
 	 */
 	public PathMatchingResourcePatternResolver(ResourceLoader resourceLoader) {
-<<<<<<< HEAD
-=======
 		logger.warn("PathMatchingResourcePatternResolver(ResourceLoader resourceLoader) called");
->>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 		Assert.notNull(resourceLoader, "ResourceLoader must not be null");
 		this.resourceLoader = resourceLoader;
 	}

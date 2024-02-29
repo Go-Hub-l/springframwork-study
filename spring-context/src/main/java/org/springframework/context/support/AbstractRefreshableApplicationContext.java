@@ -87,10 +87,7 @@ public abstract class AbstractRefreshableApplicationContext extends AbstractAppl
 	 */
 	public AbstractRefreshableApplicationContext(@Nullable ApplicationContext parent) {
 		super(parent);
-<<<<<<< HEAD
-=======
 		logger.warn("AbstractRefreshableApplicationContext(@Nullable ApplicationContext parent) called");
->>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 	}
 
 
@@ -123,10 +120,7 @@ public abstract class AbstractRefreshableApplicationContext extends AbstractAppl
 	 */
 	@Override
 	protected final void refreshBeanFactory() throws BeansException {
-<<<<<<< HEAD
-=======
 		logger.warn("AbstractRefreshableApplicationContext refreshBeanFactory() called");
->>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 		if (hasBeanFactory()) {
 			destroyBeans();
 			closeBeanFactory();

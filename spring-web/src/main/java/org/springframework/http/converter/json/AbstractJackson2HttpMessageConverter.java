@@ -1,9 +1,5 @@
 /*
-<<<<<<< HEAD
  * Copyright 2002-2024 the original author or authors.
-=======
- * Copyright 2002-2022 the original author or authors.
->>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -523,10 +519,7 @@ public abstract class AbstractJackson2HttpMessageConverter extends AbstractGener
 	}
 
 	@Override
-<<<<<<< HEAD
 	@Nullable
-=======
->>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 	protected Long getContentLength(Object object, @Nullable MediaType contentType) throws IOException {
 		if (object instanceof MappingJacksonValue) {
 			object = ((MappingJacksonValue) object).getValue();

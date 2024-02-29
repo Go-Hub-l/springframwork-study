@@ -66,10 +66,7 @@ public class StandardEnvironment extends AbstractEnvironment {
 	 * {@link MutablePropertySources} instance.
 	 */
 	public StandardEnvironment() {
-<<<<<<< HEAD
-=======
 		logger.warn("StandardEnvironment() called");
->>>>>>> 680e2d46aadf748eff87a194ca75030bb5f2d742
 	}
 
 	/**
